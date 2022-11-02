@@ -42,3 +42,4 @@ VAAPI is just an interface and it is up to the GPU hardware and driver what is a
 %meson_install
 
 %files
+%{_libdir}/obs-plugins/obs-vaapi.so
