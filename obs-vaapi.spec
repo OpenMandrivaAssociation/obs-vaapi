@@ -34,7 +34,9 @@ VAAPI is just an interface and it is up to the GPU hardware and driver what is a
 %autosetup -n %{name}-%{version} -p1
 
 %build
-%meson
+%meson \
+        --prefix=%{_libdir}/obs-plugins \
+        --buildtype=release
 
 %meson_build
 
