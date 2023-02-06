@@ -1,5 +1,5 @@
 Name:		obs-vaapi
-Version:	0.1.0
+Version:	0.2.0
 Release:	1
 License:	GPLv2.0
 Group:		Video
