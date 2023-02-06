@@ -1,5 +1,5 @@
 Name:		obs-vaapi
-Version:	0.1.0
+Version:	0.2.0
 Release:	1
 License:	GPLv2.0
 Group:		Video
@@ -34,7 +34,10 @@ VAAPI is just an interface and it is up to the GPU hardware and driver what is a
 %autosetup -n %{name}-%{version} -p1
 
 %build
-%meson
+%meson \
+        --prefix=%{_libdir}/obs-plugins \
+        --libdir=%{_libdir}/obs-plugins \
+        --buildtype=release
 
 %meson_build
 
